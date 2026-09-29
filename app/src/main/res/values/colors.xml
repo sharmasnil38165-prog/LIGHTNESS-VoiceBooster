@@ -1,0 +1,7 @@
+<resources>
+    <color name="red_primary">#FF2A2A</color>
+    <color name="boost_low">#FFB3B3</color>
+    <color name="boost_medium">#FF6B6B</color>
+    <color name="boost_high">#FF2A2A</color>
+    <color name="boost_extreme">#CC0000</color>
+</resources>

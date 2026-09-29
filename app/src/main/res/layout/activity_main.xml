@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B12"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔊"
+        android:textSize="72sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIGHTNESS"
+        android:textColor="#FF2A2A"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/boostText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔊 Boost: 5x"
+        android:textColor="#FF6B6B"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="26dp" />
+
+    <SeekBar
+        android:id="@+id/boostSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30"
+        android:layout_marginTop="16dp"
+        android:progressTint="#FF2A2A"
+        android:thumbTint="#FF2A2A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space_between"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000x"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ready"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/autoRecordButton"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FF2A2A"
+        android:text="🎤 AUTO RECORD\n(2 sec + boost)"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fileButton"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF2A2A"
+        android:text="📁 ADD FILE\n(+ boost)"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Range: 1x to 10000x\nHigher boost = louder but distortion may increase"
+        android:textColor="#CCCCCC"
+        android:textSize="12sp"
+        android:lineSpacingExtra="5dp" />
+</LinearLayout>
